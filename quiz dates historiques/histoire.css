@@ -1,0 +1,171 @@
+* {
+	text-align:center;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6; 
+    color: #333; 
+    line-height: 1.6;
+	
+}
+   
+ul {
+  list-style-type: none;
+  margin-bottom: 50px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #1f3a6b;
+  height: 50px;
+  display: flex; 
+  align-items: center; 
+  padding: 0 
+}
+
+
+nav img {
+  height: 40px; 
+  width: auto;
+  display: block;
+}
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-right: 1px solid #bbb;
+}
+
+
+li a:hover {
+	background-color: #34495e;
+}
+
+
+li:last-child {
+  border-right: none;
+  margin-left: auto; 
+}
+
+
+li.active a {
+  background-color: #2ecc71;
+}
+
+h1 {
+    font-size: 2.8em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+
+#start {
+    background-color: #2ecc71;
+    color: white;
+    font-size: 1.3em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    
+    margin-bottom: 30px;
+}
+
+#start:hover {
+    background-color: #27ae60;
+}
+
+
+section {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+#question {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+#select {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#select button {
+    background-color: #3498db;
+    color: white;
+    font-size: 1.2em;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+	margin:6px;
+}
+
+#select button:hover {
+    background-color: #2980b9;
+}
+
+
+#reponse {
+    font-size: 1.3em;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#histoire {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+#next {
+    background-color: #e67e22;
+    color: white;
+    font-size: 1.3em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;   
+}
+
+#next:hover {
+    background-color: #d35400;
+}
+
+
+#score {
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-weight: bold;
+}
+footer {
+	position:absolute;
+  background-color: #1f3a6b; 
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  width: 100%;
+  font-size: 1em;
+}
+
+
+
+
+ 
