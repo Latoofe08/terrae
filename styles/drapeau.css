@@ -127,7 +127,9 @@ footer {
   width: 100%;
   font-size: 1em;
 }
-
+a {
+    color: skyblue;
+}
 
 
 
