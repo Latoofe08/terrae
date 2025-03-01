@@ -58,7 +58,7 @@ const facile = [
     { country: "Sénégal", pic: "https://flagcdn.com/h120/sn.png" }
 ];
 const moyen = [
- { country: "Libye", pic: "https://flagcdn.com/h120/ly.png" },
+    { country: "Libye", pic: "https://flagcdn.com/h120/ly.png" },
     { country: "Irak", pic: "https://flagcdn.com/h120/iq.png" },
     { country: "Chili", pic: "https://flagcdn.com/h120/cl.png" },
     { country: "Bénin", pic: "https://flagcdn.com/h120/bj.png" },
@@ -182,7 +182,7 @@ const dur = [
     { country: "Îles Marshall", pic: "https://flagcdn.com/h120/mh.png" },
     { country: "Kiribati", pic: "https://flagcdn.com/h120/ki.png" },
     { country: "Palaos", pic: "https://flagcdn.com/h120/pw.png" },
-	{ country: "Saint-Kitts-et-Nevis", pic: "https://flagcdn.com/h120/kn.png" },
+    { country: "Saint-Kitts-et-Nevis", pic: "https://flagcdn.com/h120/kn.png" },
     { country: "Saint-Vincent-et-les Grenadines", pic: "https://flagcdn.com/h120/vc.png" },
     { country: "Les Îles Marshall", pic: "https://flagcdn.com/h120/mh.png" },
     { country: "Micronésie", pic: "https://flagcdn.com/h120/fm.png" },
@@ -194,65 +194,65 @@ const dur = [
 
 
 
-let dernierDrapeau= null
-let currentFlag=null
-let nombreQuestion= 1
-let score=0
-let currentLevel=null
+let dernierDrapeau = null
+let currentFlag = null
+let nombreQuestion = 1
+let score = 0
+let currentLevel = null
 
-function afficherDrapeau(level){
-	let newFlag
-	do {
-		newFlag=level[Math.floor(Math.random()*level.length)]
-	}
-	while (newFlag === dernierDrapeau)
-	dernierDrapeau=newFlag	
-	currentFlag=newFlag
-	document.getElementById("drapeau").src = newFlag.pic
-	if (nombreQuestion>10){
-		document.getElementById("resultat").innerText="Vous avez eu un score de " +score +" !"
-		document.getElementById("session").innerText=""
-		document.getElementById("valider").disabled = true
-		document.getElementById("drapeau").src=""
-		}
+function afficherDrapeau(level) {
+    let newFlag
+    do {
+        newFlag = level[Math.floor(Math.random() * level.length)]
+    }
+    while (newFlag === dernierDrapeau)
+    dernierDrapeau = newFlag
+    currentFlag = newFlag
+    document.getElementById("drapeau").src = newFlag.pic
+    if (nombreQuestion > 10) {
+        document.getElementById("resultat").innerText = "Vous avez eu un score de " + score + " !"
+        document.getElementById("session").innerText = ""
+        document.getElementById("valider").disabled = true
+        document.getElementById("drapeau").src = ""
+    }
 }
 
-function correctAnswer(){
-	let userAnswer=document.getElementById("reponse").value.trim()
-	if (currentFlag && userAnswer.toLowerCase() === currentFlag.country.toLowerCase()){
-		score++
-		}
-	nombreQuestion++
-	document.getElementById("session").innerText="Drapeau: " + nombreQuestion +"/10"
-	document.getElementById("resultat").innerText="Votre score: " + score
-	document.getElementById("reponse").value=""
-	afficherDrapeau(currentLevel)	
+function correctAnswer() {
+    let userAnswer = document.getElementById("reponse").value.trim()
+    if (currentFlag && userAnswer.toLowerCase() === currentFlag.country.toLowerCase()) {
+        score++
+    }
+    nombreQuestion++
+    document.getElementById("session").innerText = "Drapeau: " + nombreQuestion + "/10"
+    document.getElementById("resultat").innerText = "Votre score: " + score
+    document.getElementById("reponse").value = ""
+    afficherDrapeau(currentLevel)
 }
-		
-	
-document.getElementById("facile").addEventListener("click",function(){
-	score=0
-	nombreQuestion=1
-	document.getElementById("session").innerText="Drapeau: 1/10"
-	currentLevel= facile
-	document.getElementById("valider").disabled = false
-	afficherDrapeau(facile)
+
+
+document.getElementById("facile").addEventListener("click", function () {
+    score = 0
+    nombreQuestion = 1
+    document.getElementById("session").innerText = "Drapeau: 1/10"
+    currentLevel = facile
+    document.getElementById("valider").disabled = false
+    afficherDrapeau(facile)
 })
-document.getElementById("moy").addEventListener("click",function(){
-	score=0
-	nombreQuestion=1
-	document.getElementById("session").innerText="Drapeau: 1/10"
-	currentLevel= moyen
-	document.getElementById("valider").disabled = false
-	afficherDrapeau(moyen)
+document.getElementById("moy").addEventListener("click", function () {
+    score = 0
+    nombreQuestion = 1
+    document.getElementById("session").innerText = "Drapeau: 1/10"
+    currentLevel = moyen
+    document.getElementById("valider").disabled = false
+    afficherDrapeau(moyen)
 })
-document.getElementById("diff").addEventListener("click",function(){
-	score=0
-	nombreQuestion=1
-	document.getElementById("session").innerText="Drapeau: 1/10"
-	currentLevel= dur
-	document.getElementById("valider").disabled = false
-	afficherDrapeau(dur)	
+document.getElementById("diff").addEventListener("click", function () {
+    score = 0
+    nombreQuestion = 1
+    document.getElementById("session").innerText = "Drapeau: 1/10"
+    currentLevel = dur
+    document.getElementById("valider").disabled = false
+    afficherDrapeau(dur)
 })
 
-document.getElementById("valider").addEventListener("click",correctAnswer)
+document.getElementById("valider").addEventListener("click", correctAnswer)

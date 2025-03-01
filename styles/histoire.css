@@ -1,60 +1,60 @@
 * {
-	text-align:center;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
 
 body {
-	font-family: 'Arial', sans-serif;
-    background-color: #f4f7f6; 
-    color: #333; 
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
     line-height: 1.6;
-	
+
 }
-   
+
 ul {
-  list-style-type: none;
-  margin-bottom: 50px;
-  padding: 0px;
-  overflow: hidden;
-  background-color: #1f3a6b;
-  height: 50px;
-  display: flex; 
-  align-items: center; 
-  padding: 0 
+    list-style-type: none;
+    margin-bottom: 50px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #1f3a6b;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0
 }
 
 
 nav img {
-  height: 40px; 
-  width: auto;
-  display: block;
+    height: 40px;
+    width: auto;
+    display: block;
 }
 
 
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 10px 16px;
-  text-decoration: none;
-  border-right: 1px solid #bbb;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-right: 1px solid #bbb;
 }
 
 
 li a:hover {
-	background-color: #34495e;
+    background-color: #34495e;
 }
 
 
 li:last-child {
-  border-right: none;
-  margin-left: auto; 
+    border-right: none;
+    margin-left: auto;
 }
 
 
 li.active a {
-  background-color: #2ecc71;
+    background-color: #2ecc71;
 }
 
 h1 {
@@ -72,7 +72,7 @@ h1 {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    
+
     margin-bottom: 30px;
 }
 
@@ -114,7 +114,7 @@ section {
     padding: 12px 20px;
     border: none;
     border-radius: 8px;
-	margin:6px;
+    margin: 6px;
 }
 
 #select button:hover {
@@ -142,7 +142,7 @@ section {
     font-size: 1.3em;
     padding: 15px 30px;
     border: none;
-    border-radius: 8px;   
+    border-radius: 8px;
 }
 
 #next:hover {
@@ -155,17 +155,17 @@ section {
     margin-top: 20px;
     font-weight: bold;
 }
+
 footer {
-	position:absolute;
-  background-color: #1f3a6b; 
-  color: white;
-  text-align: center;
-  padding: 15px 20px;
-  width: 100%;
-  font-size: 1em;
+    position: absolute;
+    background-color: #1f3a6b;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 1em;
 }
 
-
-
-
- 
+a {
+    color: skyblue;
+}
