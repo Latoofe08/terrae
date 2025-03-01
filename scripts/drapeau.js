@@ -46,7 +46,7 @@ const facile = [
     { country: "Norvège", pic: "https://flagcdn.com/h120/no.png" },
     { country: "Luxembourg", pic: "https://flagcdn.com/h120/lu.png" },
     { country: "Croatie", pic: "https://flagcdn.com/h120/hr.png" },
-    { country: "Finlande", pic: "https://flagcdn.com/h120/fi.png" },
+    { country: "Finland", pic: "https://flagcdn.com/h120/fi.png" },
     { country: "Hongrie", pic: "https://flagcdn.com/h120/hu.png" },
     { country: "Islande", pic: "https://flagcdn.com/h120/is.png" },
     { country: "Irlande", pic: "https://flagcdn.com/h120/ie.png" },
@@ -192,8 +192,6 @@ const dur = [
 
 ];
 
-
-
 let dernierDrapeau = null
 let currentFlag = null
 let nombreQuestion = 1
@@ -229,7 +227,6 @@ function correctAnswer() {
     afficherDrapeau(currentLevel)
 }
 
-
 document.getElementById("facile").addEventListener("click", function () {
     score = 0
     nombreQuestion = 1
@@ -238,6 +235,7 @@ document.getElementById("facile").addEventListener("click", function () {
     document.getElementById("valider").disabled = false
     afficherDrapeau(facile)
 })
+
 document.getElementById("moy").addEventListener("click", function () {
     score = 0
     nombreQuestion = 1
@@ -246,6 +244,7 @@ document.getElementById("moy").addEventListener("click", function () {
     document.getElementById("valider").disabled = false
     afficherDrapeau(moyen)
 })
+
 document.getElementById("diff").addEventListener("click", function () {
     score = 0
     nombreQuestion = 1
